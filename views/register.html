@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <div class="registration-container">
+        <a href="login.html" class="back-to-login">
+            <i class="fas fa-arrow-left"></i> Volver a Login
+        </a>
+        <div class="logo-container">
+            <img src="../img/brand-logos/main-white-logo.png" alt="TorinoCar Logo">
+            
+        </div>
+        <form id="registerForm" action="/registro" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullName">Nombre Completo:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                <label for="showPassword">Mostrar Contraseña</label>
+                <input type="checkbox" id="showPassword" >
+            </div>
+            </div>
+            
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <script src="./js/conexion.js"></script>
+</body>
+</html>
